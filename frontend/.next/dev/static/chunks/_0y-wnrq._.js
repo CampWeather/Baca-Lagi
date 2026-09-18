@@ -6,6 +6,7 @@ __turbopack_context__.s([
     "default",
     ()=>MarketplaceBuku
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.4_@babel+core@7.2_2efb6ce17ef367cc803ac566ce970141/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.4_@babel+core@7.2_2efb6ce17ef367cc803ac566ce970141/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.4_@babel+core@7.2_2efb6ce17ef367cc803ac566ce970141/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/lucide-react@1.46.0_react@19.2.8/node_modules/lucide-react/dist/esm/icons/search.mjs [app-client] (ecmascript) <export default as Search>");
@@ -24,136 +25,78 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-const books = [
-    {
-        id: 1,
-        title: 'Laut Bercerita',
-        author: 'Leila S. Chudori',
-        price: 68000,
-        oldPrice: 115000,
-        condition: 'Seperti Baru',
-        city: 'Bandung',
-        rating: 4.9,
-        cover: 'https://placehold.co/360x500/172554/ffffff?text=Laut%5CnBercerita',
-        color: 'bg-blue-950'
-    },
-    {
-        id: 2,
-        title: 'Filosofi Teras',
-        author: 'Henry Manampiring',
-        price: 59000,
-        oldPrice: 98000,
-        condition: 'Baik',
-        city: 'Jakarta',
-        rating: 4.8,
-        cover: 'https://placehold.co/360x500/f59e0b/172554?text=Filosofi%5CnTeras',
-        color: 'bg-amber-500'
-    },
-    {
-        id: 3,
-        title: 'Atomic Habits',
-        author: 'James Clear',
-        price: 75000,
-        oldPrice: 108000,
-        condition: 'Seperti Baru',
-        city: 'Surabaya',
-        rating: 4.9,
-        cover: 'https://placehold.co/360x500/f4f4f5/18181b?text=Atomic%5CnHabits',
-        color: 'bg-zinc-100'
-    },
-    {
-        id: 4,
-        title: 'Bumi Manusia',
-        author: 'Pramoedya A. Toer',
-        price: 62000,
-        oldPrice: 120000,
-        condition: 'Cukup Baik',
-        city: 'Yogyakarta',
-        rating: 4.7,
-        cover: 'https://placehold.co/360x500/991b1b/ffffff?text=Bumi%5CnManusia',
-        color: 'bg-red-800'
-    },
-    {
-        id: 5,
-        title: 'The Psychology of Money',
-        author: 'Morgan Housel',
-        price: 79000,
-        oldPrice: 125000,
-        condition: 'Baik',
-        city: 'Bogor',
-        rating: 4.8,
-        cover: 'https://placehold.co/360x500/14532d/ffffff?text=Psychology%5Cnof+Money',
-        color: 'bg-green-900'
-    },
-    {
-        id: 6,
-        title: 'Pulang',
-        author: 'Tere Liye',
-        price: 49000,
-        oldPrice: 89000,
-        condition: 'Baik',
-        city: 'Malang',
-        rating: 4.6,
-        cover: 'https://placehold.co/360x500/1e3a8a/ffffff?text=Pulang',
-        color: 'bg-blue-900'
-    },
-    {
-        id: 7,
-        title: 'Sapiens',
-        author: 'Yuval Noah Harari',
-        price: 88000,
-        oldPrice: 150000,
-        condition: 'Seperti Baru',
-        city: 'Depok',
-        rating: 4.9,
-        cover: 'https://placehold.co/360x500/e7e5e4/292524?text=Sapiens',
-        color: 'bg-stone-200'
-    },
-    {
-        id: 8,
-        title: 'Cantik Itu Luka',
-        author: 'Eka Kurniawan',
-        price: 65000,
-        oldPrice: 110000,
-        condition: 'Cukup Baik',
-        city: 'Solo',
-        rating: 4.7,
-        cover: 'https://placehold.co/360x500/7c2d12/ffffff?text=Cantik+Itu%5CnLuka',
-        color: 'bg-orange-900'
-    }
-];
 const formatPrice = (value)=>new Intl.NumberFormat("id-ID", {
         style: "currency",
         currency: "IDR",
         maximumFractionDigits: 0
     }).format(value);
 const categories = [
-    'Semua',
-    'Fiksi',
-    'Pengembangan Diri',
-    'Bisnis',
-    'Sejarah',
-    'Anak',
-    'Pendidikan'
+    "Semua",
+    "Fiksi",
+    "Pengembangan Diri",
+    "Bisnis",
+    "Sejarah",
+    "Anak",
+    "Pendidikan"
 ];
+function fallbackCover(title) {
+    return `https://placehold.co/360x500/172554/ffffff?text=${encodeURIComponent(title)}`;
+}
 function MarketplaceBuku() {
     _s();
+    const [books, setBooks] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [query, setQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Semua");
     const [favorites, setFavorites] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [cart, setCart] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "MarketplaceBuku.useEffect": ()=>{
+            const controller = new AbortController();
+            async function fetchBooks() {
+                try {
+                    setIsLoading(true);
+                    setError("");
+                    const apiURL = ("TURBOPACK compile-time value", "http://localhost:8080/api/v1");
+                    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+                    ;
+                    const response = await fetch(`${apiURL}/books`, {
+                        signal: controller.signal
+                    });
+                    if (!response.ok) {
+                        throw new Error(`API mengembalikan status ${response.status}`);
+                    }
+                    const data = await response.json();
+                    setBooks(data);
+                } catch (err) {
+                    if (err instanceof Error && err.name === "AbortError") return;
+                    setError(err instanceof Error ? err.message : "Gagal mengambil data buku");
+                } finally{
+                    if (!controller.signal.aborted) setIsLoading(false);
+                }
+            }
+            fetchBooks();
+            return ({
+                "MarketplaceBuku.useEffect": ()=>controller.abort()
+            })["MarketplaceBuku.useEffect"];
+        }
+    }["MarketplaceBuku.useEffect"], []);
     const shownBooks = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "MarketplaceBuku.useMemo[shownBooks]": ()=>books.filter({
-                "MarketplaceBuku.useMemo[shownBooks]": (book)=>`${book.title} ${book.author}`.toLowerCase().includes(query.toLowerCase())
+                "MarketplaceBuku.useMemo[shownBooks]": (book)=>`${book.title} ${book.author ?? ""}`.toLowerCase().includes(query.trim().toLowerCase())
             }["MarketplaceBuku.useMemo[shownBooks]"])
     }["MarketplaceBuku.useMemo[shownBooks]"], [
+        books,
         query
     ]);
-    const toggleFavorite = (id)=>setFavorites((items)=>items.includes(id) ? items.filter((item)=>item !== id) : [
+    const toggleFavorite = (id)=>{
+        setFavorites((items)=>items.includes(id) ? items.filter((item)=>item !== id) : [
                 ...items,
                 id
             ]);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-stone-50 text-slate-900",
         children: [
@@ -173,19 +116,19 @@ function MarketplaceBuku() {
                                             size: 22
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 118,
                                             columnNumber: 89
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     "BacaLagi"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 53,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -196,7 +139,7 @@ function MarketplaceBuku() {
                                         size: 20
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 122,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -206,13 +149,13 @@ function MarketplaceBuku() {
                                         placeholder: "Cari judul, penulis, atau ISBN..."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 123,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 57,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -224,7 +167,7 @@ function MarketplaceBuku() {
                                         children: "Jelajahi"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -233,7 +176,7 @@ function MarketplaceBuku() {
                                         children: "Cara Kerja"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 127,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -243,14 +186,14 @@ function MarketplaceBuku() {
                                                 size: 19
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 64,
+                                                lineNumber: 128,
                                                 columnNumber: 77
                                             }, this),
                                             " Masuk"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -261,50 +204,51 @@ function MarketplaceBuku() {
                                                 size: 20
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 65,
-                                                columnNumber: 103
+                                                lineNumber: 130,
+                                                columnNumber: 15
                                             }, this),
                                             cart > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "absolute -right-2 -top-2 grid h-5 w-5 place-items-center rounded-full bg-amber-400 text-xs font-bold text-blue-950",
                                                 children: cart
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 65,
-                                                columnNumber: 142
+                                                lineNumber: 131,
+                                                columnNumber: 28
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 61,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setMobileOpen(!mobileOpen),
                                 className: "ml-auto rounded-lg p-2 lg:hidden",
+                                "aria-label": "Buka menu",
                                 children: mobileOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 67,
-                                    columnNumber: 121
+                                    lineNumber: 135,
+                                    columnNumber: 27
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 67,
-                                    columnNumber: 129
+                                    lineNumber: 135,
+                                    columnNumber: 35
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 67,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/page.tsx",
-                        lineNumber: 52,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     mobileOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -318,8 +262,8 @@ function MarketplaceBuku() {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 120
+                                        lineNumber: 141,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         value: query,
@@ -328,14 +272,14 @@ function MarketplaceBuku() {
                                         placeholder: "Cari buku..."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 189
+                                        lineNumber: 142,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 69,
-                                columnNumber: 79
+                                lineNumber: 140,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-col gap-3 font-semibold",
@@ -345,41 +289,41 @@ function MarketplaceBuku() {
                                         children: "Jelajahi"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 404
+                                        lineNumber: 144,
+                                        columnNumber: 64
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "#cara-kerja",
                                         children: "Cara Kerja"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 435
+                                        lineNumber: 144,
+                                        columnNumber: 95
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "text-left",
                                         children: "Masuk"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 471
+                                        lineNumber: 144,
+                                        columnNumber: 131
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 69,
-                                columnNumber: 353
+                                lineNumber: 144,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/page.tsx",
-                        lineNumber: 69,
-                        columnNumber: 24
+                        lineNumber: 139,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/app/page.tsx",
-                lineNumber: 51,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -396,7 +340,7 @@ function MarketplaceBuku() {
                                             children: "Buku lama, cerita baru."
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -404,7 +348,7 @@ function MarketplaceBuku() {
                                             children: "Temukan buku bagus tanpa harga baru."
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 154,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -412,13 +356,14 @@ function MarketplaceBuku() {
                                             children: "Marketplace buku bekas terpercaya. Lebih hemat untukmu, lebih baik untuk bumi, dan setiap buku mendapat pembaca berikutnya."
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 155,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "mt-8 flex flex-wrap gap-3",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "#koleksi",
                                                     className: "flex items-center gap-2 rounded-xl bg-amber-400 px-6 py-3.5 font-bold text-blue-950 transition hover:bg-amber-300",
                                                     children: [
                                                         "Mulai Belanja ",
@@ -426,27 +371,27 @@ function MarketplaceBuku() {
                                                             size: 19
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 79,
-                                                            columnNumber: 206
+                                                            lineNumber: 157,
+                                                            columnNumber: 176
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 79,
-                                                    columnNumber: 58
+                                                    lineNumber: 157,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     className: "rounded-xl border border-white/30 px-6 py-3.5 font-bold hover:bg-white/10",
                                                     children: "Jual Bukumu"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 79,
-                                                    columnNumber: 239
+                                                    lineNumber: 158,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 156,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -459,22 +404,22 @@ function MarketplaceBuku() {
                                                             children: "12.000+"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 84
+                                                            lineNumber: 161,
+                                                            columnNumber: 22
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-sm text-blue-200",
                                                             children: "Buku tersedia"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 135
+                                                            lineNumber: 161,
+                                                            columnNumber: 73
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 80,
-                                                    columnNumber: 79
+                                                    lineNumber: 161,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
@@ -483,22 +428,22 @@ function MarketplaceBuku() {
                                                             children: "4.800+"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 206
+                                                            lineNumber: 162,
+                                                            columnNumber: 22
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-sm text-blue-200",
                                                             children: "Pembaca aktif"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 256
+                                                            lineNumber: 162,
+                                                            columnNumber: 72
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 80,
-                                                    columnNumber: 201
+                                                    lineNumber: 162,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
@@ -507,33 +452,33 @@ function MarketplaceBuku() {
                                                             children: "32"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 327
+                                                            lineNumber: 163,
+                                                            columnNumber: 22
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-sm text-blue-200",
                                                             children: "Kota"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 373
+                                                            lineNumber: 163,
+                                                            columnNumber: 68
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 80,
-                                                    columnNumber: 322
+                                                    lineNumber: 163,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 160,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -549,15 +494,15 @@ function MarketplaceBuku() {
                                                         children: "Pilihan Minggu Ini"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 83,
-                                                        columnNumber: 214
+                                                        lineNumber: 169,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
                                                         size: 54
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 83,
-                                                        columnNumber: 302
+                                                        lineNumber: 169,
+                                                        columnNumber: 107
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
@@ -567,45 +512,45 @@ function MarketplaceBuku() {
                                                                     "Baca.",
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                                        lineNumber: 83,
-                                                                        columnNumber: 371
+                                                                        lineNumber: 170,
+                                                                        columnNumber: 66
                                                                     }, this),
                                                                     "Jual.",
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                                        lineNumber: 83,
-                                                                        columnNumber: 381
+                                                                        lineNumber: 170,
+                                                                        columnNumber: 77
                                                                     }, this),
                                                                     "Ulangi."
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                                lineNumber: 83,
-                                                                columnNumber: 329
+                                                                lineNumber: 170,
+                                                                columnNumber: 24
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "mt-2 text-xs font-semibold",
                                                                 children: "Cerita tidak berhenti di satu pemilik."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                                lineNumber: 83,
-                                                                columnNumber: 399
+                                                                lineNumber: 170,
+                                                                columnNumber: 96
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 83,
-                                                        columnNumber: 324
+                                                        lineNumber: 170,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 83,
-                                                columnNumber: 114
+                                                lineNumber: 168,
+                                                columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 167,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -618,92 +563,64 @@ function MarketplaceBuku() {
                                                         size: 55
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 84,
-                                                        columnNumber: 179
+                                                        lineNumber: 174,
+                                                        columnNumber: 71
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 84,
-                                                    columnNumber: 125
+                                                    lineNumber: 174,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-sm font-bold",
                                                     children: "Kondisi terverifikasi"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 84,
-                                                    columnNumber: 246
+                                                    lineNumber: 175,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "mt-1 flex text-amber-500",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                                        1,
+                                                        2,
+                                                        3,
+                                                        4,
+                                                        5
+                                                    ].map((star)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
                                                             size: 15,
                                                             fill: "currentColor"
-                                                        }, void 0, false, {
+                                                        }, star, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 84,
-                                                            columnNumber: 350
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                            size: 15,
-                                                            fill: "currentColor"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 84,
-                                                            columnNumber: 387
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                            size: 15,
-                                                            fill: "currentColor"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 84,
-                                                            columnNumber: 424
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                            size: 15,
-                                                            fill: "currentColor"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 84,
-                                                            columnNumber: 461
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                            size: 15,
-                                                            fill: "currentColor"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 84,
-                                                            columnNumber: 498
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                            lineNumber: 176,
+                                                            columnNumber: 90
+                                                        }, this))
+                                                }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 84,
-                                                    columnNumber: 308
+                                                    lineNumber: 176,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 173,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/app/page.tsx",
-                            lineNumber: 74,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/page.tsx",
-                        lineNumber: 73,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -720,22 +637,22 @@ function MarketplaceBuku() {
                                                 children: "Pilihan untukmu"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 99
+                                                lineNumber: 184,
+                                                columnNumber: 18
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 className: "text-3xl font-black tracking-tight",
                                                 children: "Buku yang baru ditambahkan"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 197
+                                                lineNumber: 184,
+                                                columnNumber: 116
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 94
+                                        lineNumber: 184,
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "flex items-center gap-2 self-start rounded-lg border border-stone-300 px-4 py-2.5 text-sm font-bold",
@@ -744,85 +661,141 @@ function MarketplaceBuku() {
                                                 size: 17
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 405
+                                                lineNumber: 185,
+                                                columnNumber: 133
                                             }, this),
                                             " Filter"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 285
+                                        lineNumber: 185,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 90,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mb-8 flex gap-2 overflow-x-auto pb-2",
                                 children: categories.map((category)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveCategory(category),
-                                        className: `whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition ${activeCategory === category ? 'bg-blue-950 text-white' : 'border border-stone-300 bg-white hover:border-blue-900'}`,
+                                        className: `whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition ${activeCategory === category ? "bg-blue-950 text-white" : "border border-stone-300 bg-white hover:border-blue-900"}`,
                                         children: category
                                     }, category, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 91,
-                                        columnNumber: 93
+                                        lineNumber: 189,
+                                        columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 91,
+                                lineNumber: 187,
                                 columnNumber: 11
                             }, this),
-                            shownBooks.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "rounded-2xl border border-stone-200 bg-white py-16 text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
+                                        className: "mx-auto mb-3 animate-pulse text-amber-500",
+                                        size: 42
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 195,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "font-semibold text-slate-600",
+                                        children: "Memuat buku dari backend..."
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 196,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 194,
+                                columnNumber: 13
+                            }, this) : error ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "rounded-2xl border border-red-200 bg-red-50 p-8 text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "font-bold text-red-700",
+                                        children: "Gagal memuat buku"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 200,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-2 text-sm text-red-600",
+                                        children: error
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 201,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-3 text-xs text-slate-500",
+                                        children: "Pastikan backend aktif pada port 8080 dan konfigurasi CORS sudah benar."
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/app/page.tsx",
+                                        lineNumber: 202,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/app/page.tsx",
+                                lineNumber: 199,
+                                columnNumber: 13
+                            }, this) : shownBooks.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-6",
                                 children: shownBooks.map((book)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                                         className: "group",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl ${book.color}`,
+                                                className: `relative mb-4 aspect-4/5 overflow-hidden rounded-2xl ${book.color ?? "bg-stone-200"}`,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                        src: book.cover,
+                                                        src: book.cover || fallbackCover(book.title),
                                                         alt: `Sampul ${book.title}`,
                                                         className: "h-full w-full object-cover transition duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 93,
-                                                        columnNumber: 101
+                                                        lineNumber: 209,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>toggleFavorite(book.id),
                                                         className: "absolute right-3 top-3 rounded-full bg-white p-2.5 shadow-md",
-                                                        "aria-label": "Favorit",
+                                                        "aria-label": `Favoritkan ${book.title}`,
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
                                                             size: 18,
-                                                            className: favorites.includes(book.id) ? 'fill-red-500 text-red-500' : 'text-slate-600'
+                                                            className: favorites.includes(book.id) ? "fill-red-500 text-red-500" : "text-slate-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 93,
-                                                            columnNumber: 380
+                                                            lineNumber: 211,
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 93,
-                                                        columnNumber: 238
+                                                        lineNumber: 210,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute bottom-3 left-3 rounded-lg bg-white/95 px-2.5 py-1.5 text-xs font-bold text-blue-950 shadow",
-                                                        children: book.condition
+                                                        children: book.condition || "Belum diketahui"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 93,
-                                                        columnNumber: 497
+                                                        lineNumber: 213,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 93,
-                                                columnNumber: 13
+                                                lineNumber: 208,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-1 text-xs text-slate-500",
@@ -831,10 +804,10 @@ function MarketplaceBuku() {
                                                         size: 13
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 94,
-                                                        columnNumber: 77
+                                                        lineNumber: 216,
+                                                        columnNumber: 21
                                                     }, this),
-                                                    book.city,
+                                                    book.city || "Lokasi belum tersedia",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "ml-auto flex items-center gap-1 text-slate-700",
                                                         children: [
@@ -843,37 +816,37 @@ function MarketplaceBuku() {
                                                                 className: "fill-amber-400 text-amber-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                                lineNumber: 94,
-                                                                columnNumber: 172
+                                                                lineNumber: 217,
+                                                                columnNumber: 86
                                                             }, this),
-                                                            book.rating
+                                                            book.rating ?? "-"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 94,
-                                                        columnNumber: 107
+                                                        lineNumber: 217,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 13
+                                                lineNumber: 215,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "mt-2 truncate text-base font-bold group-hover:text-blue-800",
                                                 children: book.title
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 257
+                                                lineNumber: 219,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-1 text-sm text-slate-500",
-                                                children: book.author
+                                                children: book.author || "Penulis belum diketahui"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 350
+                                                lineNumber: 220,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "mt-3 flex items-end justify-between gap-2",
@@ -885,55 +858,55 @@ function MarketplaceBuku() {
                                                                 children: formatPrice(book.price)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                                lineNumber: 94,
-                                                                columnNumber: 474
+                                                                lineNumber: 223,
+                                                                columnNumber: 23
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            book.oldPrice !== undefined && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-xs text-slate-400 line-through",
                                                                 children: formatPrice(book.oldPrice)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                                lineNumber: 94,
-                                                                columnNumber: 556
+                                                                lineNumber: 224,
+                                                                columnNumber: 55
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 94,
-                                                        columnNumber: 469
+                                                        lineNumber: 222,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>setCart((value)=>value + 1),
                                                         className: "rounded-xl bg-amber-400 p-2.5 text-blue-950 transition hover:bg-amber-300",
-                                                        "aria-label": "Tambah ke keranjang",
+                                                        "aria-label": `Tambah ${book.title} ke keranjang`,
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$46$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__["ShoppingCart"], {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/app/page.tsx",
-                                                            lineNumber: 94,
-                                                            columnNumber: 822
+                                                            lineNumber: 226,
+                                                            columnNumber: 210
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/page.tsx",
-                                                        lineNumber: 94,
-                                                        columnNumber: 651
+                                                        lineNumber: 226,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/app/page.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 410
+                                                lineNumber: 221,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, book.id, true, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 145
+                                        lineNumber: 207,
+                                        columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 92,
-                                columnNumber: 32
+                                lineNumber: 205,
+                                columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "rounded-2xl border border-dashed border-stone-300 py-16 text-center",
                                 children: [
@@ -942,35 +915,35 @@ function MarketplaceBuku() {
                                         size: 42
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 117
+                                        lineNumber: 233,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "font-bold",
                                         children: "Buku tidak ditemukan"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 178
+                                        lineNumber: 233,
+                                        columnNumber: 77
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "mt-1 text-sm text-slate-500",
                                         children: "Coba gunakan kata kunci lain."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/page.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 229
+                                        lineNumber: 233,
+                                        columnNumber: 128
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/page.tsx",
-                                lineNumber: 95,
-                                columnNumber: 32
+                                lineNumber: 232,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/page.tsx",
-                        lineNumber: 89,
+                        lineNumber: 182,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -987,40 +960,40 @@ function MarketplaceBuku() {
                                             children: "Mudah dan aman"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 98,
-                                            columnNumber: 144
+                                            lineNumber: 240,
+                                            columnNumber: 45
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "text-3xl font-black",
                                             children: "Buku berikutnya hanya tiga langkah lagi."
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 98,
-                                            columnNumber: 241
+                                            lineNumber: 240,
+                                            columnNumber: 142
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 98,
-                                    columnNumber: 112
+                                    lineNumber: 240,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid gap-5 md:grid-cols-3",
                                     children: [
                                         [
-                                            '01',
-                                            'Cari buku favoritmu',
-                                            'Telusuri ribuan buku bekas berdasarkan judul, penulis, kategori, dan kondisi.'
+                                            "01",
+                                            "Cari buku favoritmu",
+                                            "Telusuri ribuan buku bekas berdasarkan judul, penulis, kategori, dan kondisi."
                                         ],
                                         [
-                                            '02',
-                                            'Pesan dengan aman',
-                                            'Lihat detail kondisi, reputasi penjual, lalu lakukan transaksi dengan tenang.'
+                                            "02",
+                                            "Pesan dengan aman",
+                                            "Lihat detail kondisi, reputasi penjual, lalu lakukan transaksi dengan tenang."
                                         ],
                                         [
-                                            '03',
-                                            'Baca dan putarkan',
-                                            'Setelah selesai, jual kembali agar cerita terus hidup bersama pembaca baru.'
+                                            "03",
+                                            "Baca dan putarkan",
+                                            "Setelah selesai, jual kembali agar cerita terus hidup bersama pembaca baru."
                                         ]
                                     ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-2xl border border-amber-200 bg-white p-6",
@@ -1030,51 +1003,51 @@ function MarketplaceBuku() {
                                                     children: item[0]
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 98,
-                                                    columnNumber: 787
+                                                    lineNumber: 243,
+                                                    columnNumber: 97
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "mt-6 text-xl font-bold",
                                                     children: item[1]
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 98,
-                                                    columnNumber: 856
+                                                    lineNumber: 243,
+                                                    columnNumber: 166
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "mt-3 leading-relaxed text-slate-600",
                                                     children: item[2]
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/page.tsx",
-                                                    lineNumber: 98,
-                                                    columnNumber: 909
+                                                    lineNumber: 243,
+                                                    columnNumber: 219
                                                 }, this)
                                             ]
                                         }, item[0], true, {
                                             fileName: "[project]/frontend/app/page.tsx",
-                                            lineNumber: 98,
-                                            columnNumber: 707
+                                            lineNumber: 243,
+                                            columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 98,
-                                    columnNumber: 328
+                                    lineNumber: 241,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/app/page.tsx",
-                            lineNumber: 98,
-                            columnNumber: 58
+                            lineNumber: 239,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/page.tsx",
-                        lineNumber: 98,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/app/page.tsx",
-                lineNumber: 72,
+                lineNumber: 149,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1089,23 +1062,23 @@ function MarketplaceBuku() {
                                     size: 20
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 236
+                                    lineNumber: 252,
+                                    columnNumber: 74
                                 }, this),
                                 " BacaLagi"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/app/page.tsx",
-                            lineNumber: 101,
-                            columnNumber: 173
+                            lineNumber: 252,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-sm",
                             children: "© 2026 BacaLagi. Membuat buku terus dibaca."
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/page.tsx",
-                            lineNumber: 101,
-                            columnNumber: 272
+                            lineNumber: 253,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-5 text-sm",
@@ -1115,50 +1088,50 @@ function MarketplaceBuku() {
                                     children: "Bantuan"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 378
+                                    lineNumber: 254,
+                                    columnNumber: 47
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "#",
                                     children: "Privasi"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 401
+                                    lineNumber: 254,
+                                    columnNumber: 70
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$4_$40$babel$2b$core$40$7$2e$2_2efb6ce17ef367cc803ac566ce970141$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "#",
                                     children: "Ketentuan"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/page.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 424
+                                    lineNumber: 254,
+                                    columnNumber: 93
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/app/page.tsx",
-                            lineNumber: 101,
-                            columnNumber: 342
+                            lineNumber: 254,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/app/page.tsx",
-                    lineNumber: 101,
-                    columnNumber: 53
+                    lineNumber: 251,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/app/page.tsx",
-                lineNumber: 101,
+                lineNumber: 250,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/app/page.tsx",
-        lineNumber: 50,
+        lineNumber: 114,
         columnNumber: 5
     }, this);
 }
-_s(MarketplaceBuku, "Fvt4sM/oFJLNQQffDqh+/CK1RXs=");
+_s(MarketplaceBuku, "bH3uyPa4ZrMc0tyuJZ959hOwthc=");
 _c = MarketplaceBuku;
 var _c;
 __turbopack_context__.k.register(_c, "MarketplaceBuku");

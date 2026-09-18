@@ -1,19 +1,21 @@
 package main
 
 import (
-	"net/http"
+	"log"
 
+	"github.com/CampWeather/Baca-Lagi/backend/internal/config"
+	"github.com/CampWeather/Baca-Lagi/backend/internal/routers"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	router := gin.Default()
+	cfg := config.Load()
 
-	router.GET("/api/v1/health", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "API BacaLagi berjalan",
-		})
-	})
+	gin.SetMode(cfg.GinMode)
 
-	router.Run(":8080")
+	router := routers.SetupRouter(cfg.FrontendURL)
+
+	if err := router.Run(":" + cfg.Port); err != nil {
+		log.Fatal(err)
+	}
 }
