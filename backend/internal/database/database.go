@@ -32,6 +32,7 @@ func Connect(databaseURL string) (*gorm.DB, error) {
 	if err := db.AutoMigrate(
 		&models.User{},
 		&models.Book{},
+		&models.RefreshToken{},
 	); err != nil {
 		return nil, fmt.Errorf("gagal menjalankan AutoMigrate: %w", err)
 	}
